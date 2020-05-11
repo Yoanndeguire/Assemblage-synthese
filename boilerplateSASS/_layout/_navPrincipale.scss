@@ -10,4 +10,10 @@ header{
             }
         }
     }
+    & ul.langue{
+        display: flex;
+        & a{
+            @include hyperlien;
+        }
+    }
 }

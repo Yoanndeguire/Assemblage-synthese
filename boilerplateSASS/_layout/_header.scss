@@ -1,0 +1,37 @@
+main>header{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    & h1{
+        font-weight: 300;
+        color: var(--rose);
+        & strong{
+            @include seriffont;
+            font-size: 6rem;
+        }
+    }
+    & p{
+        @include seriffont;
+    }
+    & span{
+        @extend p;
+        color: var(--rose);
+    }
+    & img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    & p.art{
+        // position: absolute;
+        margin: 0 3em 0 auto;
+        @include seriffont;
+        font-size: 6rem;
+        color: var(--rose);
+        z-index: 100;
+
+    }
+}
