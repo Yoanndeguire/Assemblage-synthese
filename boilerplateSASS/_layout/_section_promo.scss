@@ -1,0 +1,41 @@
+section#promotion{
+    @include flex-column-center;
+    & h2{
+        @include h2;
+    }
+    & article{
+        width: 80%;
+        display: flex;
+        & img{
+            width: 100%;
+        }
+        & div.contenu-promo{
+            margin: 0 2rem;
+            & h3{
+                @include seriffont;
+                font-size: 4rem;
+                font-weight: 500;
+            }
+            & p.price{
+                margin: 2rem 0;
+                font-size: 3rem;
+            }
+            & p.first-price{
+                @extend p.price;
+                color: var(--rougeorange);
+                text-decoration: line-through;
+
+            }
+        }
+    }
+    & a{
+        @include hyperlien;
+        @include text-roboto;
+        margin: 4em 0;
+        padding: 1rem;
+        border: 3px solid var(--gris);
+        border-radius: 1rem;
+        color: var(--gris);
+        font-weight: 800;
+    }
+}

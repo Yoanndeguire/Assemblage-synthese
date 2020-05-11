@@ -1,0 +1,32 @@
+section.listeProduits{
+    @include flex-column-center;
+    & div.liste{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    }   
+    & article{
+        @include flex-column-center;
+        margin: 3em;
+        width: 580px;
+        & div.nom-prix{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            font-size: 2rem;
+            & h3{
+                @include seriffont;
+                margin: 0 auto 0 0;
+                font-weight: 500;
+            }
+        }
+        & p{
+            @include text-roboto;
+        }
+        & a{
+            @include hyperlien;
+            font-size: 6rem;
+        }
+    }
+}

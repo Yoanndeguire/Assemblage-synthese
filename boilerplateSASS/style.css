@@ -35,6 +35,11 @@ html {
           box-sizing: border-box;
 }
 
+p, main > header div.titre-hero span {
+  letter-spacing: .25rem;
+  line-height: 2rem;
+}
+
 @-webkit-keyframes haut {
   from {
     opacity: 0;
@@ -145,6 +150,7 @@ main > header img {
   position: absolute;
   right: 0;
   bottom: 0;
+  top: 0;
   z-index: 1;
 }
 
@@ -154,6 +160,192 @@ main > header p.art, main > header div.titre-hero span.art {
   font-size: 9rem;
   color: var(--rose);
   z-index: 100;
+}
+
+section.listeProduits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.listeProduits div.liste {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.listeProduits article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3em;
+  width: 580px;
+}
+
+section.listeProduits article div.nom-prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  font-size: 2rem;
+}
+
+section.listeProduits article div.nom-prix h3 {
+  font-family: 'Playfair Display', serif;
+  margin: 0 auto 0 0;
+  font-weight: 500;
+}
+
+section.listeProduits article p, section.listeProduits article main > header div.titre-hero span, main > header div.titre-hero section.listeProduits article span {
+  letter-spacing: .25rem;
+  line-height: 2rem;
+}
+
+section.listeProduits article a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: var(--noir);
+  font-size: 6rem;
+}
+
+section#horaire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--jaune);
+}
+
+section#horaire h2 {
+  font-family: 'Playfair Display', serif;
+  margin: 1em;
+  color: var(--gris);
+  font-size: 6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+section#horaire div.horaire-contenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 5rem 0;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+section#horaire div.horaire-contenu table {
+  letter-spacing: .25rem;
+  line-height: 2rem;
+  width: 45%;
+}
+
+section#horaire div.horaire-contenu p, section#horaire div.horaire-contenu main > header div.titre-hero span, main > header div.titre-hero section#horaire div.horaire-contenu span {
+  width: 45%;
+}
+
+section#promotion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#promotion h2 {
+  font-family: 'Playfair Display', serif;
+  margin: 1em;
+  color: var(--gris);
+  font-size: 6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+section#promotion article {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section#promotion article img {
+  width: 100%;
+}
+
+section#promotion article div.contenu-promo {
+  margin: 0 2rem;
+}
+
+section#promotion article div.contenu-promo h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+section#promotion article div.contenu-promo p.price, section#promotion article div.contenu-promo main > header div.titre-hero span.price, main > header div.titre-hero section#promotion article div.contenu-promo span.price, section#promotion article div.contenu-promo p.first-price, section#promotion article div.contenu-promo main > header div.titre-hero span.first-price, main > header div.titre-hero section#promotion article div.contenu-promo span.first-price {
+  margin: 2rem 0;
+  font-size: 3rem;
+}
+
+section#promotion article div.contenu-promo p.first-price, section#promotion article div.contenu-promo main > header div.titre-hero span.first-price, main > header div.titre-hero section#promotion article div.contenu-promo span.first-price {
+  color: var(--rougeorange);
+  text-decoration: line-through;
+}
+
+section#promotion a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: var(--noir);
+  letter-spacing: .25rem;
+  line-height: 2rem;
+  margin: 4em 0;
+  padding: 1rem;
+  border: 3px solid var(--gris);
+  border-radius: 1rem;
+  color: var(--gris);
+  font-weight: 800;
 }
 
 header {
