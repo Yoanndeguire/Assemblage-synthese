@@ -35,6 +35,50 @@ html {
           box-sizing: border-box;
 }
 
+@-webkit-keyframes haut {
+  from {
+    opacity: 0;
+    top: 50%;
+  }
+  to {
+    opacity: .5;
+    top: 0;
+  }
+}
+
+@keyframes haut {
+  from {
+    opacity: 0;
+    top: 50%;
+  }
+  to {
+    opacity: .5;
+    top: 0;
+  }
+}
+
+@-webkit-keyframes bas {
+  from {
+    opacity: 0;
+    top: 50%;
+  }
+  to {
+    opacity: .5;
+    top: 100%;
+  }
+}
+
+@keyframes bas {
+  from {
+    opacity: 0;
+    top: 50%;
+  }
+  to {
+    opacity: .5;
+    top: 100%;
+  }
+}
+
 main > header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,22 +91,54 @@ main > header {
   height: 100vh;
 }
 
-main > header h1 {
+main > header div.titre-hero {
+  position: relative;
+  margin: 0 0 0 5em;
+}
+
+main > header div.titre-hero h1 {
+  position: relative;
+  top: 3.5em;
   font-weight: 300;
+  color: var(--gris);
+}
+
+main > header div.titre-hero h1 strong {
+  position: relative;
+  top: -3rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 9rem;
   color: var(--rose);
 }
 
-main > header h1 strong {
+main > header div.titre-hero p, main > header div.titre-hero span {
   font-family: 'Playfair Display', serif;
-  font-size: 6rem;
+  color: var(--gris);
 }
 
-main > header p, main > header span {
-  font-family: 'Playfair Display', serif;
-}
-
-main > header span {
+main > header div.titre-hero span {
+  position: absolute;
+  font-size: 9rem;
   color: var(--rose);
+  opacity: .5;
+}
+
+main > header div.titre-hero span:first-of-type {
+  -webkit-animation: haut;
+          animation: haut;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+main > header div.titre-hero span:last-of-type {
+  -webkit-animation: bas;
+          animation: bas;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 main > header img {
@@ -72,10 +148,10 @@ main > header img {
   z-index: 1;
 }
 
-main > header p.art, main > header span.art {
+main > header p.art, main > header div.titre-hero span.art {
   margin: 0 3em 0 auto;
   font-family: 'Playfair Display', serif;
-  font-size: 6rem;
+  font-size: 9rem;
   color: var(--rose);
   z-index: 100;
 }

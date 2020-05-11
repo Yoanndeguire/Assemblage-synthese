@@ -1,22 +1,55 @@
+@keyframes haut{
+    from{ opacity: 0; top: 50%;}
+    to{opacity: .5; top: 0;}
+}
+@keyframes bas{
+    from{ opacity: 0; top: 50%;}
+    to{opacity: .5; top: 100%;}
+}
+
 main>header{
     display: flex;
     flex-direction: column;
     position: relative;
     height: 100vh;
-    & h1{
-        font-weight: 300;
-        color: var(--rose);
-        & strong{
-            @include seriffont;
-            font-size: 6rem;
+    & div.titre-hero{
+        position: relative;
+        margin: 0 0 0 5em;
+        & h1{
+            position: relative;
+            top: 3.5em;
+            font-weight: 300;
+            color: var(--gris);
+            & strong{
+                position: relative;
+                top: -3rem;
+                @include seriffont;
+                font-size: 9rem;
+                color: var(--rose);
+            }
         }
-    }
-    & p{
-        @include seriffont;
-    }
-    & span{
-        @extend p;
-        color: var(--rose);
+        & p{
+            @include seriffont;
+            color: var(--gris);
+        }
+        & span{
+            @extend p;
+            position: absolute;
+            font-size: 9rem;
+            color: var(--rose);
+            opacity: .5;
+            &:first-of-type{
+                animation: haut;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+            }
+            &:last-of-type{
+                animation: bas;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+            }
+        }
+
     }
     & img {
         position: absolute;
@@ -29,7 +62,7 @@ main>header{
         // position: absolute;
         margin: 0 3em 0 auto;
         @include seriffont;
-        font-size: 6rem;
+        font-size: 9rem;
         color: var(--rose);
         z-index: 100;
 
