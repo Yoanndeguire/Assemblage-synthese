@@ -1,3 +1,9 @@
 @mixin seriffont{
     font-family: 'Playfair Display', serif;
 }
+
+@mixin hyperlien{
+    display: flex;
+    text-decoration: none;
+    color: var(--noir);
+}
