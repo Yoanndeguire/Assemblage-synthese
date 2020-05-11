@@ -162,6 +162,20 @@ main > header p.art, main > header div.titre-hero span.art {
   z-index: 100;
 }
 
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--rose);
+}
+
 section.listeProduits {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -235,6 +249,36 @@ section.listeProduits article a {
   font-size: 6rem;
 }
 
+section#commander {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--bleu);
+}
+
+section#commander h2 {
+  font-family: 'Playfair Display', serif;
+  position: relative;
+  color: var(--gris);
+  text-transform: lowercase;
+}
+
+section#commander h2 strong {
+  font-family: 'Playfair Display', serif;
+  margin: 1em;
+  color: var(--gris);
+  font-size: 6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 section#horaire {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -277,6 +321,20 @@ section#horaire div.horaire-contenu table {
 
 section#horaire div.horaire-contenu p, section#horaire div.horaire-contenu main > header div.titre-hero span, main > header div.titre-hero section#horaire div.horaire-contenu span {
   width: 45%;
+}
+
+section#livraison {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--jaune);
 }
 
 section#promotion {

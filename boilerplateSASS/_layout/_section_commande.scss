@@ -1,0 +1,13 @@
+section#commander{
+    @include flex-column-center;
+    background-color: var(--bleu);
+    & h2{
+        @include seriffont;
+        position: relative;
+        color: var(--gris);
+        text-transform: lowercase;
+        & strong{
+            @include h2;
+        }
+    }
+}
