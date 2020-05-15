@@ -16,10 +16,7 @@ section#livraison{
             font-size: 1rem;
         }
         & input.submit{
-            border: 3px solid var(--gris);
-            border-radius: 1rem;
-            color: var(--gris);
-            font-weight: 700;
+            @include click;
             background-color: var(--jaune);
             transition: .2s;
             &:hover{

@@ -489,7 +489,7 @@ section#livraison form input.submit {
   border: 3px solid var(--gris);
   border-radius: 1rem;
   color: var(--gris);
-  font-weight: 700;
+  font-weight: 800;
   background-color: var(--jaune);
   -webkit-transition: .2s;
   transition: .2s;
