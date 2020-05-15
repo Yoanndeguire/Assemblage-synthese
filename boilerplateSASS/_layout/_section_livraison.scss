@@ -1,4 +1,18 @@
 section#livraison{
     @include flex-column-center;
     background-color: var(--jaune);
+    text-align: center;
+    & h2{
+        @include h2;
+    }
+    & form{
+        @include flex-column-center;
+        & input{
+            @include text-roboto;
+            margin: 1rem;
+            border: none;
+            padding: .8rem;
+            font-size: 1rem;
+        }
+    }
 }

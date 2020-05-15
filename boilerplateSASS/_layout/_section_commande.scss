@@ -6,8 +6,34 @@ section#commander{
         position: relative;
         color: var(--gris);
         text-transform: lowercase;
+        
         & strong{
             @include h2;
+            
         }
+    }
+    & p>strong{
+        @include seriffont;
+        margin: 1rem;
+        font-size: 5rem;
+        font-weight: 300;
+        color: var(--blanc);
+    }
+    & strong.one{
+        display: inline-block;
+        transform:rotateZ(45deg);
+    }
+    & strong.two{
+        display: inline-block;
+        transform:rotateZ(-45deg);
+    }
+    & strong.three{
+        display: inline-block;
+        transform:rotateZ(20);
+    }
+    & p:last-of-type{
+        margin: 1em;
+        font-size: 3rem;
+        color: var(--blanc);
     }
 }

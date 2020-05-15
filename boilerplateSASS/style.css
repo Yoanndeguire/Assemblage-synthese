@@ -279,6 +279,38 @@ section#commander h2 strong {
   text-transform: uppercase;
 }
 
+section#commander p > strong, section#commander main > header div.titre-hero span > strong, main > header div.titre-hero section#commander span > strong {
+  font-family: 'Playfair Display', serif;
+  margin: 1rem;
+  font-size: 5rem;
+  font-weight: 300;
+  color: var(--blanc);
+}
+
+section#commander strong.one {
+  display: inline-block;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+section#commander strong.two {
+  display: inline-block;
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+}
+
+section#commander strong.three {
+  display: inline-block;
+  -webkit-transform: rotateZ(20);
+          transform: rotateZ(20);
+}
+
+section#commander p:last-of-type, section#commander main > header div.titre-hero span:last-of-type, main > header div.titre-hero section#commander span:last-of-type {
+  margin: 1em;
+  font-size: 3rem;
+  color: var(--blanc);
+}
+
 section#horaire {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -335,6 +367,38 @@ section#livraison {
       -ms-flex-align: center;
           align-items: center;
   background-color: var(--jaune);
+  text-align: center;
+}
+
+section#livraison h2 {
+  font-family: 'Playfair Display', serif;
+  margin: 1em;
+  color: var(--gris);
+  font-size: 6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+section#livraison form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#livraison form input {
+  letter-spacing: .25rem;
+  line-height: 2rem;
+  margin: 1rem;
+  border: none;
+  padding: .8rem;
+  font-size: 1rem;
 }
 
 section#promotion {
