@@ -1,0 +1,42 @@
+section#produits{
+    @include flex-column-center;
+    text-align: center;
+
+    & div.titre-section{
+        position: relative;
+        & h2{
+            @include h2;
+        }
+
+        & span{
+            @include seriffont;
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            color: var(--gris);
+            font-size: 4rem;
+            text-transform: uppercase;
+            z-index: 50;
+            &:last-of-type{
+                font-size: 20em;
+                top: -4rem;
+                left: 3rem;
+                opacity: 0.2;
+                z-index: 20;
+            }
+        }
+    }
+    & a{
+        @include hyperlien;
+        @include click;
+        @include text-roboto;
+        margin: 2rem;
+        padding: .8rem;
+        transition: .2s;
+        &:hover{
+            border-color: var(--bleu);
+            color: var(--blanc);
+            background-color: var(--bleu);
+        }
+    }
+}

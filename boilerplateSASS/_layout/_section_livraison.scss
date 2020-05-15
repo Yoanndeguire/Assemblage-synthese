@@ -17,11 +17,14 @@ section#livraison{
         }
         & input.submit{
             @include click;
+            border-color: var(--blanc);
+            color: var(--blanc);
             background-color: var(--jaune);
             transition: .2s;
             &:hover{
-                border-color: var(--blanc);
-                background-color: var(--blanc);
+                border-color: var(--gris);
+                color: var(--jaune);
+                background-color: var(--gris);
             }
         }
     }
