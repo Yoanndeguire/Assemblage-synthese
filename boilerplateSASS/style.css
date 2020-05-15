@@ -263,14 +263,21 @@ section#commander {
   background-color: var(--bleu);
 }
 
-section#commander h2 {
-  font-family: 'Playfair Display', serif;
+section#commander div.titre-commander {
   position: relative;
-  color: var(--gris);
-  text-transform: lowercase;
 }
 
-section#commander h2 strong {
+section#commander div.titre-commander span {
+  font-family: 'Playfair Display', serif;
+  position: absolute;
+  top: 5rem;
+  left: 8rem;
+  font-size: 2rem;
+  color: var(--gris);
+  opacity: .8;
+}
+
+section#commander div.titre-commander h2 {
   font-family: 'Playfair Display', serif;
   margin: 1em;
   color: var(--gris);
@@ -279,9 +286,13 @@ section#commander h2 strong {
   text-transform: uppercase;
 }
 
-section#commander p > strong, section#commander main > header div.titre-hero span > strong, main > header div.titre-hero section#commander span > strong {
-  font-family: 'Playfair Display', serif;
+section#commander p, section#commander main > header div.titre-hero span, main > header div.titre-hero section#commander span {
   margin: 1rem;
+}
+
+section#commander p strong, section#commander main > header div.titre-hero span strong, main > header div.titre-hero section#commander span strong {
+  font-family: 'Playfair Display', serif;
+  margin: 0 1rem;
   font-size: 5rem;
   font-weight: 300;
   color: var(--blanc);
@@ -306,7 +317,7 @@ section#commander strong.three {
 }
 
 section#commander p:last-of-type, section#commander main > header div.titre-hero span:last-of-type, main > header div.titre-hero section#commander span:last-of-type {
-  margin: 1em;
+  margin: 1em 0 6rem 0;
   font-size: 3rem;
   color: var(--blanc);
 }
@@ -390,6 +401,7 @@ section#livraison form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 1rem 0 3rem 0;
 }
 
 section#livraison form input {
@@ -399,6 +411,21 @@ section#livraison form input {
   border: none;
   padding: .8rem;
   font-size: 1rem;
+}
+
+section#livraison form input.submit {
+  border: 3px solid var(--gris);
+  border-radius: 1rem;
+  color: var(--gris);
+  font-weight: 700;
+  background-color: var(--jaune);
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+section#livraison form input.submit:hover {
+  border-color: var(--blanc);
+  background-color: var(--blanc);
 }
 
 section#promotion {

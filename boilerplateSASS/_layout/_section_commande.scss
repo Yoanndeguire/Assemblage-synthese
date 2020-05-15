@@ -1,23 +1,30 @@
 section#commander{
     @include flex-column-center;
     background-color: var(--bleu);
-    & h2{
-        @include seriffont;
+    & div.titre-commander{
         position: relative;
-        color: var(--gris);
-        text-transform: lowercase;
-        
-        & strong{
+        & span{
+            @include seriffont;
+            position: absolute;
+            top: 5rem;
+            left: 8rem;
+            font-size: 2rem;
+            color: var(--gris);
+            opacity: .8;
+        }
+        & h2{
             @include h2;
-            
         }
     }
-    & p>strong{
-        @include seriffont;
+    & p{
         margin: 1rem;
-        font-size: 5rem;
-        font-weight: 300;
-        color: var(--blanc);
+        & strong{
+           @include seriffont;
+           margin: 0 1rem;
+           font-size: 5rem;
+           font-weight: 300;
+           color: var(--blanc);
+       }
     }
     & strong.one{
         display: inline-block;
@@ -32,7 +39,7 @@ section#commander{
         transform:rotateZ(20);
     }
     & p:last-of-type{
-        margin: 1em;
+        margin: 1em 0 6rem 0;
         font-size: 3rem;
         color: var(--blanc);
     }

@@ -7,12 +7,25 @@ section#livraison{
     }
     & form{
         @include flex-column-center;
+        margin: 1rem 0 3rem 0;
         & input{
             @include text-roboto;
             margin: 1rem;
             border: none;
             padding: .8rem;
             font-size: 1rem;
+        }
+        & input.submit{
+            border: 3px solid var(--gris);
+            border-radius: 1rem;
+            color: var(--gris);
+            font-weight: 700;
+            background-color: var(--jaune);
+            transition: .2s;
+            &:hover{
+                border-color: var(--blanc);
+                background-color: var(--blanc);
+            }
         }
     }
 }
