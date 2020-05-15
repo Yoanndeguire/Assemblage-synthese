@@ -1,0 +1,46 @@
+section#about{
+    @include flex-column-center;
+    position: relative;
+    padding: 5em 0;
+    & h2{
+        @include seriffont;
+        margin: 0 auto 0 5rem;
+        font-size: 20em;
+        color: var(--gris);
+        z-index: 75;
+    }
+    & div.contenue-about{
+        display: flex;
+        justify-content: space-around;
+
+        & div.info{
+            width: 40%;
+            margin: 0 auto 0 5rem;
+            & p{
+                margin: 2rem 0;
+            }
+        }
+
+        & div.sculpture{
+            @include seriffont;
+            @include flex-column-center;
+            justify-content: space-around;
+            position: absolute;
+            right: 20rem;
+            top: 0;
+            bottom: 0;
+            font-size: 8em;
+            color: var(--rose);
+            z-index: 50;
+            overflow: hidden;
+
+        }
+    }
+    & img{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 650px;
+        z-index: 100;
+    }
+}
