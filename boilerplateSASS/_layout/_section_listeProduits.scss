@@ -10,6 +10,7 @@ section.listeProduits{
         @include flex-column-center;
         margin: 3em;
         width: 580px;
+        height: 820px;
         & div.nom-prix{
             display: flex;
             align-items: center;
@@ -27,6 +28,7 @@ section.listeProduits{
         & a{
             @include hyperlien;
             font-size: 6rem;
+            border-radius: 50%;
         }
     }
 }

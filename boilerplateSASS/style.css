@@ -216,6 +216,7 @@ section.listeProduits article {
           align-items: center;
   margin: 3em;
   width: 580px;
+  height: 820px;
 }
 
 section.listeProduits article div.nom-prix {
@@ -247,6 +248,7 @@ section.listeProduits article a {
   text-decoration: none;
   color: var(--noir);
   font-size: 6rem;
+  border-radius: 50%;
 }
 
 section#produits {
