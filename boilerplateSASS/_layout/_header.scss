@@ -1,9 +1,9 @@
 @keyframes haut{
-    from{ opacity: 0; top: 50%;}
-    to{opacity: .5; top: 0;}
+    from{ opacity: 0; top: 0;}
+    to{opacity: .5; top: -100%;}
 }
 @keyframes bas{
-    from{ opacity: 0; top: 50%;}
+    from{ opacity: 0; top: 0;}
     to{opacity: .5; top: 100%;}
 }
 
@@ -26,29 +26,31 @@ main>header{
                 @include seriffont;
                 font-size: 9rem;
                 color: var(--rose);
+                text-transform: uppercase;
+                &::before{
+                    content: 'VOYAGER';
+                    position: absolute;
+                    top: 0;
+                    font-size: 9rem;
+                    color: var(--rose);
+                    opacity: .5;
+                    animation: haut;
+                    animation-duration: 2s;
+                    animation-fill-mode: forwards;
+                }
+                &::after{
+                    @extend before;
+                    animation: bas;
+                    animation-duration: 2s;
+                    animation-fill-mode: forwards;
+                }
             }
         }
         & p{
             @include seriffont;
             color: var(--gris);
         }
-        & span{
-            @extend p;
-            position: absolute;
-            font-size: 9rem;
-            color: var(--rose);
-            opacity: .5;
-            &:first-of-type{
-                animation: haut;
-                animation-duration: 2s;
-                animation-fill-mode: forwards;
-            }
-            &:last-of-type{
-                animation: bas;
-                animation-duration: 2s;
-                animation-fill-mode: forwards;
-            }
-        }
+
 
     }
     & img {

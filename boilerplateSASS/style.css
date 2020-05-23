@@ -62,29 +62,29 @@ footer p:last-of-type, footer main > header div.titre-hero span:last-of-type, ma
 @-webkit-keyframes haut {
   from {
     opacity: 0;
-    top: 50%;
+    top: 0;
   }
   to {
     opacity: .5;
-    top: 0;
+    top: -100%;
   }
 }
 
 @keyframes haut {
   from {
     opacity: 0;
-    top: 50%;
+    top: 0;
   }
   to {
     opacity: .5;
-    top: 0;
+    top: -100%;
   }
 }
 
 @-webkit-keyframes bas {
   from {
     opacity: 0;
-    top: 50%;
+    top: 0;
   }
   to {
     opacity: .5;
@@ -95,7 +95,7 @@ footer p:last-of-type, footer main > header div.titre-hero span:last-of-type, ma
 @keyframes bas {
   from {
     opacity: 0;
-    top: 50%;
+    top: 0;
   }
   to {
     opacity: .5;
@@ -133,6 +133,38 @@ main > header div.titre-hero h1 strong {
   font-family: 'Playfair Display', serif;
   font-size: 9rem;
   color: var(--rose);
+  text-transform: uppercase;
+}
+
+main > header div.titre-hero h1 strong::before {
+  content: 'VOYAGER';
+  position: absolute;
+  top: 0;
+  font-size: 9rem;
+  color: var(--rose);
+  opacity: .5;
+  -webkit-animation: haut;
+          animation: haut;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+main > header div.titre-hero h1 strong::after {
+  content: 'VOYAGER';
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 9rem;
+  color: var(--rose);
+  opacity: .5;
+  -webkit-animation: bas;
+          animation: bas;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 main > header div.titre-hero p, main > header div.titre-hero span {
