@@ -906,14 +906,14 @@ header {
   background-color: rgba(255, 255, 255, 0.473);
 }
 
-header nav.principale {
+header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 80%;
 }
 
-header nav.principale ul {
+header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -923,13 +923,20 @@ header nav.principale ul {
       justify-content: space-around;
 }
 
-header nav.principale ul a {
+header nav ul a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-decoration: none;
   color: var(--noir);
   padding: 1rem;
+}
+
+header nav.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 header ul.langue {
