@@ -1,0 +1,8 @@
+footer{
+    @include flex-column-center;
+    background-color: var(--rose);
+    & p:last-of-type{
+        font-size: .4rem;
+        opacity: .5;
+    }
+}

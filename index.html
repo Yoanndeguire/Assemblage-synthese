@@ -48,26 +48,26 @@
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae deserunt eveniet sunt possimus, similique exercitationem veritatis voluptas, tempore architecto aspernatur atque officia modi! Sed reprehenderit aliquam nam fuga incidunt quos.</p>
                 <div class="carousel">
-                    <button class="carousel_fleche">
-                        <img src="images/icon/back.svg" alt="">
-                    </button>
-                    <div class="carousel_liste-container">
-                        <ul class="carousel_liste">
-                            <li class="carousel-item"><img src="images/dave/dave-360.jpg" alt=""></li>
-                            <li class="carousel-item"><img src="images/eum/eum-360.jpg" alt=""></li>
-                            <li class="carousel-item"><img src="images/lise/lise-360.jpg" alt=""></li>
-                        </ul>
-                    </div>
-                    <button class="carousel_fleche">
+                    <button class="carousel-fleche gauche cacher">
                         <img src="images/icon/next.svg" alt="">
                     </button>
-                    <div class="carousel_nav">
-                        <button class="carousel_indicator"></button>
-                        <button class="carousel_indicator"></button>
-                        <button class="carousel_indicator"></button>
+                    <div class="carousel_liste-container">
+                        <ul class="carousel-liste">
+                            <li class="carousel-item focusItem"><img class="carousel-image"src="images/dave/dave-580.jpg" alt=""></li>
+                            <li class="carousel-item"><img class="carousel-image"src="images/eum/eum-580.jpg" alt=""></li>
+                            <li class="carousel-item"><img class="carousel-image"src="images/lise/lise-580.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <button class="carousel-fleche droite">
+                        <img src="images/icon/next.svg" alt="">
+                    </button>
+                    <div class="carousel-nav">
+                        <button class="carousel-indicator focus"></button>
+                        <button class="carousel-indicator"></button>
+                        <button class="carousel-indicator"></button>
                     </div>
                 </div>
-                <a href="liste.html">Voir nos produits</a>
+                <a href="liste.html" class="voirProduit">Voir nos produits</a>
             </section>
             <section id="horaire">
                 <h2>Horaire</h2>
@@ -116,7 +116,7 @@
                         <p class="price">499.00$</p>
                     </div>
                 </article>
-                <a href="produit.html">en savoir plus</a>
+                <a href="produit.html">En savoir plus</a>
             </section>
             <section id="commander">
                 <div class="titre-commander">
@@ -182,7 +182,7 @@
             </section>
         </main>
         <footer>
-            <p>Yoann Deguire</p>
+            <p>&#169;Yoann Deguire</p>
             <p>Projet synthèse réalisé dans le cadre des cours Assemblage des médias ainsi que Web3</p>
             <p>Technique d'intégration multimédia</p>
             <p>Cégep de Saint-Jérôme</p>
