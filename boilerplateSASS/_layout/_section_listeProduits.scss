@@ -1,5 +1,4 @@
 section.listeProduits{
-    @include flex-column-center;
     & div.liste{
     display: flex;
     flex-wrap: wrap;
@@ -26,9 +25,7 @@ section.listeProduits{
             @include text-roboto;
         }
         & a{
-            @include hyperlien;
-            font-size: 6rem;
-            border-radius: 50%;
+            @include bouton-liste;
         }
     }
 }

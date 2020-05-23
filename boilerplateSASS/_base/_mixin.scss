@@ -33,3 +33,21 @@
     color: var(--gris);
     font-weight: 800;
 }
+
+@mixin bouton-liste{
+    @include hyperlien;
+    @include click;
+    align-items: center;;
+    justify-content: center;
+    margin: 2rem 0 0 0;
+    height: .8em;
+    width: .8em;
+    border-radius: 50%;
+    font-size: 6rem;
+    transition: .2s;
+    &:hover{
+        border-color: var(--bleu);
+        color: var(--blanc);
+        background-color: var(--bleu);
+    }
+}

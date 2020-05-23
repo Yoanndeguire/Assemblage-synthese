@@ -26,17 +26,106 @@ section#produits{
             }
         }
     }
-    & a{
-        @include hyperlien;
-        @include click;
-        @include text-roboto;
-        margin: 2rem;
-        padding: .8rem;
-        transition: .2s;
-        &:hover{
-            border-color: var(--bleu);
-            color: var(--blanc);
-            background-color: var(--bleu);
+
+    & article{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 3rem 0 7rem 0;
+        justify-content: space-between;
+        max-width: 1120px;
+        & h3{
+            @include seriffont;
+            position: absolute;
+            right: -1rem;
+            top: -3rem;
+            font-size: 10rem;
+            &:after{
+                content: '';
+                position: absolute;
+                top: 13rem;
+                right: -15rem;
+                width: 30rem;
+                height: 5px;
+                background-color: var(--noir);
+            }
+        }
+        & img{
+            margin: 2rem auto;
+        }
+        & p{
+            width: 50%;
+            text-align: left;
+        }
+        & div.prix-panier{
+            @include flex-column-center;
+            & p{
+                font-size: 2rem;
+                margin: 0;
+            }
+            & a{
+                @include hyperlien;
+                @include click;
+                @include text-roboto;
+                margin: 2rem 0;
+                padding: .8rem;
+                transition: .2s;
+                &:hover{
+                    border-color: var(--bleu);
+                    color: var(--blanc);
+                    background-color: var(--bleu);
+                }
+            }
         }
     }
+
+    & h4{
+        @include seriffont;
+        position: relative;
+        width: 100vw;
+        left: 0;
+        right: 0;
+        font-size: 3rem;
+        &:before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 2rem;
+            width: 35rem;
+            height: 10px;
+            background-color: var(--rose);
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 2rem;
+            width: 35rem;
+            height: 10px;
+            background-color: var(--rose);
+        }
+    }
+
+    & div.liste-produits{
+        display: flex;
+        margin: 0 0 4rem 0;
+        & article {
+            margin: 0 2rem;
+            width: 360px;
+            justify-content: space-around;
+            div.nom-prix{
+                text-align: left;
+                & h5{
+                    @include seriffont;
+                    font-size: 2rem;
+                }
+            }
+            & a{
+                @include bouton-liste;
+                margin: auto 0;
+                font-size: 4rem;
+            }
+        }
+    }
+
 }
