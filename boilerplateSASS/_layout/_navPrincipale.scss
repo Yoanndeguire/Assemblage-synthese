@@ -1,41 +1,47 @@
 header{
-    display: flex;
-    align-items: center;
+    height: 3rem;
     background-color: rgba(255, 255, 255, 0.473);
-    & nav{
+    & div#sticky{
         display: flex;
-        width: 80%;
-        & ul{
+        align-items: center;
+        & nav{
             display: flex;
-            list-style-type: none;
-            width: 100%;
-            justify-content: space-around;
-            & a{
-                @include hyperlien;
-                padding: 1rem;
+            width: 80%;
+            & ul{
+                display: flex;
+                list-style-type: none;
+                width: 100%;
+                justify-content: space-around;
+                & a{
+                    @include hyperlien;
+                    padding: 1rem;
+                }
             }
         }
-    }
-    & nav.sticky{
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-    }
-    & ul.langue{
-        display: flex;
-        margin: 0 2rem 0 auto;
-        list-style-type: none;
-        & a{
-            @include hyperlien;
-            &:first-of-type{
-                &:after{
-                    content: "";
-                    width: 1px;
-                    height: 5px;
-                    background-color: var(noir);
+        & ul.langue{
+            display: flex;
+            margin: 0 2rem 0 auto;
+            list-style-type: none;
+            & a{
+                @include hyperlien;
+                &:first-of-type{
+                    &:after{
+                        content: "";
+                        width: 1px;
+                        height: 5px;
+                        background-color: var(noir);
+                    }
                 }
             }
         }
     }
+}
+
+div.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 2000;
 }

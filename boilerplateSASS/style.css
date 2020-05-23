@@ -305,7 +305,7 @@ section#produits div.titre-section span:last-of-type {
   z-index: 20;
 }
 
-section#produits article {
+section#produits article.detail {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -319,7 +319,7 @@ section#produits article {
   max-width: 1120px;
 }
 
-section#produits article h3 {
+section#produits article.detail h3 {
   font-family: 'Playfair Display', serif;
   position: absolute;
   right: -1rem;
@@ -327,7 +327,7 @@ section#produits article h3 {
   font-size: 10rem;
 }
 
-section#produits article h3:after {
+section#produits article.detail h3:after {
   content: '';
   position: absolute;
   top: 13rem;
@@ -337,16 +337,16 @@ section#produits article h3:after {
   background-color: var(--noir);
 }
 
-section#produits article img {
+section#produits article.detail img {
   margin: 2rem auto;
 }
 
-section#produits article p, section#produits article main > header div.titre-hero span, main > header div.titre-hero section#produits article span {
+section#produits article.detail p, section#produits article.detail main > header div.titre-hero span, main > header div.titre-hero section#produits article.detail span {
   width: 50%;
   text-align: left;
 }
 
-section#produits article div.prix-panier {
+section#produits article.detail div.prix-panier {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -359,12 +359,12 @@ section#produits article div.prix-panier {
           align-items: center;
 }
 
-section#produits article div.prix-panier p, section#produits article div.prix-panier main > header div.titre-hero span, main > header div.titre-hero section#produits article div.prix-panier span {
+section#produits article.detail div.prix-panier p, section#produits article.detail div.prix-panier main > header div.titre-hero span, main > header div.titre-hero section#produits article.detail div.prix-panier span {
   font-size: 2rem;
   margin: 0;
 }
 
-section#produits article div.prix-panier a {
+section#produits article.detail div.prix-panier a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -382,7 +382,7 @@ section#produits article div.prix-panier a {
   transition: .2s;
 }
 
-section#produits article div.prix-panier a:hover {
+section#produits article.detail div.prix-panier a:hover {
   border-color: var(--bleu);
   color: var(--blanc);
   background-color: var(--bleu);
@@ -417,30 +417,30 @@ section#produits h4:after {
   background-color: var(--rose);
 }
 
-section#produits div.liste-produits {
+section#produits div.suggestions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 0 4rem 0;
 }
 
-section#produits div.liste-produits article {
+section#produits div.suggestions article {
   margin: 0 2rem;
   width: 360px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
-section#produits div.liste-produits article div.nom-prix {
+section#produits div.suggestions article div.nom-prix {
   text-align: left;
 }
 
-section#produits div.liste-produits article div.nom-prix h5 {
+section#produits div.suggestions article div.nom-prix h5 {
   font-family: 'Playfair Display', serif;
   font-size: 2rem;
 }
 
-section#produits div.liste-produits article a {
+section#produits div.suggestions article a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -467,7 +467,7 @@ section#produits div.liste-produits article a {
   font-size: 4rem;
 }
 
-section#produits div.liste-produits article a:hover {
+section#produits div.suggestions article a:hover {
   border-color: var(--bleu);
   color: var(--blanc);
   background-color: var(--bleu);
@@ -897,23 +897,27 @@ section#question div.contenu-question form input:last-of-type:hover {
 }
 
 header {
+  height: 3rem;
+  background-color: rgba(255, 255, 255, 0.473);
+}
+
+header div#sticky {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(255, 255, 255, 0.473);
 }
 
-header nav {
+header div#sticky nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 80%;
 }
 
-header nav ul {
+header div#sticky nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -923,7 +927,7 @@ header nav ul {
       justify-content: space-around;
 }
 
-header nav ul a {
+header div#sticky nav ul a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -932,14 +936,7 @@ header nav ul a {
   padding: 1rem;
 }
 
-header nav.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-header ul.langue {
+header div#sticky ul.langue {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -947,7 +944,7 @@ header ul.langue {
   list-style-type: none;
 }
 
-header ul.langue a {
+header div#sticky ul.langue a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -955,10 +952,19 @@ header ul.langue a {
   color: var(--noir);
 }
 
-header ul.langue a:first-of-type:after {
+header div#sticky ul.langue a:first-of-type:after {
   content: "";
   width: 1px;
   height: 5px;
   background-color: var(noir);
+}
+
+div.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 2000;
 }
 /*# sourceMappingURL=style.css.map */

@@ -27,7 +27,7 @@ section#produits{
         }
     }
 
-    & article{
+    & article.detail{
         position: relative;
         display: flex;
         flex-wrap: wrap;
@@ -106,7 +106,7 @@ section#produits{
         }
     }
 
-    & div.liste-produits{
+    & div.suggestions{
         display: flex;
         margin: 0 0 4rem 0;
         & article {

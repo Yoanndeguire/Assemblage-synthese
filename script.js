@@ -1,10 +1,10 @@
-$(function( ){
+$(function(){
 
-    $(window).scroll(function(){
-        if($(this).scrolltop()>height){
-            $('nav').addClass('sticky');
+    $(window).on('scroll', function(){
+        if($(this).scrollTop()){
+            $('#sticky').addClass('sticky');
         }else{
-            $('nav').removeClass('sticky');
+            $('#sticky').removeClass('sticky');
         }
     });
 
