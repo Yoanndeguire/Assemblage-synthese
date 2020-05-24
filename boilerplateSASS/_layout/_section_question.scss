@@ -8,13 +8,29 @@ section#question{
     & div.contenu-question{
         display: flex;
         & div.info{
+            position: relative;
+            top: -4rem;
+            margin: 0 5rem;
+            & img{
+                margin: 2rem auto;
+            }
             & address{
                 @include text-roboto;
                 text-transform: italic;
             }
+
+            & ul.social{
+                display: flex;
+                justify-content: space-evenly;
+                list-style-type: none;
+                & img{
+                    width: 2rem;
+                }
+            }
         }
         & form{
             @include flex-column-center;
+            margin: auto;
             & input{
                 @include text-roboto;
                 width: 40em;

@@ -35,7 +35,7 @@ html {
           box-sizing: border-box;
 }
 
-p, main > header div.titre-hero span {
+p {
   letter-spacing: .25rem;
   line-height: 2rem;
 }
@@ -54,7 +54,7 @@ footer {
   background-color: var(--rose);
 }
 
-footer p:last-of-type, footer main > header div.titre-hero span:last-of-type, main > header div.titre-hero footer span:last-of-type {
+footer p:last-of-type {
   font-size: .4rem;
   opacity: .5;
 }
@@ -155,7 +155,6 @@ main > header div.titre-hero h1 strong::after {
   content: 'VOYAGER';
   position: absolute;
   top: 0;
-  right: 0;
   font-size: 9rem;
   color: var(--rose);
   opacity: .5;
@@ -167,34 +166,9 @@ main > header div.titre-hero h1 strong::after {
           animation-fill-mode: forwards;
 }
 
-main > header div.titre-hero p, main > header div.titre-hero span {
+main > header div.titre-hero p {
   font-family: 'Playfair Display', serif;
   color: var(--gris);
-}
-
-main > header div.titre-hero span {
-  position: absolute;
-  font-size: 9rem;
-  color: var(--rose);
-  opacity: .5;
-}
-
-main > header div.titre-hero span:first-of-type {
-  -webkit-animation: haut;
-          animation: haut;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-main > header div.titre-hero span:last-of-type {
-  -webkit-animation: bas;
-          animation: bas;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 
 main > header img {
@@ -205,7 +179,7 @@ main > header img {
   z-index: 1;
 }
 
-main > header p.art, main > header div.titre-hero span.art {
+main > header p.art {
   margin: 0 3em 0 auto;
   font-family: 'Playfair Display', serif;
   font-size: 9rem;
@@ -260,7 +234,7 @@ section.listeProduits article div.nom-prix h3 {
   font-weight: 500;
 }
 
-section.listeProduits article p, section.listeProduits article main > header div.titre-hero span, main > header div.titre-hero section.listeProduits article span {
+section.listeProduits article p {
   letter-spacing: .25rem;
   line-height: 2rem;
 }
@@ -378,7 +352,7 @@ section#produits article.detail img {
   margin: 2rem auto;
 }
 
-section#produits article.detail p, section#produits article.detail main > header div.titre-hero span, main > header div.titre-hero section#produits article.detail span {
+section#produits article.detail p {
   width: 50%;
   text-align: left;
 }
@@ -396,7 +370,7 @@ section#produits article.detail div.prix-panier {
           align-items: center;
 }
 
-section#produits article.detail div.prix-panier p, section#produits article.detail div.prix-panier main > header div.titre-hero span, main > header div.titre-hero section#produits article.detail div.prix-panier span {
+section#produits article.detail div.prix-panier p {
   font-size: 2rem;
   margin: 0;
 }
@@ -672,11 +646,11 @@ section#commander div.titre-commander h2 {
   text-transform: uppercase;
 }
 
-section#commander p, section#commander main > header div.titre-hero span, main > header div.titre-hero section#commander span {
+section#commander p {
   margin: 1rem;
 }
 
-section#commander p strong, section#commander main > header div.titre-hero span strong, main > header div.titre-hero section#commander span strong {
+section#commander p strong {
   font-family: 'Playfair Display', serif;
   margin: 0 1rem;
   font-size: 5rem;
@@ -702,7 +676,7 @@ section#commander strong.three {
           transform: rotateZ(20);
 }
 
-section#commander p:last-of-type, section#commander main > header div.titre-hero span:last-of-type, main > header div.titre-hero section#commander span:last-of-type {
+section#commander p:last-of-type {
   margin: 1em 0 6rem 0;
   font-size: 3rem;
   color: var(--blanc);
@@ -745,7 +719,7 @@ section#about div.contenue-about div.info {
   z-index: 55;
 }
 
-section#about div.contenue-about div.info p, section#about div.contenue-about div.info main > header div.titre-hero span, main > header div.titre-hero section#about div.contenue-about div.info span {
+section#about div.contenue-about div.info p {
   margin: 2rem 0;
 }
 
@@ -840,7 +814,7 @@ section#horaire div.horaire-contenu table tr > td {
   z-index: 500;
 }
 
-section#horaire div.horaire-contenu p, section#horaire div.horaire-contenu main > header div.titre-hero span, main > header div.titre-hero section#horaire div.horaire-contenu span {
+section#horaire div.horaire-contenu p {
   width: 45%;
 }
 
@@ -952,12 +926,12 @@ section#promotion article div.contenu-promo h3 {
   font-weight: 500;
 }
 
-section#promotion article div.contenu-promo p.price, section#promotion article div.contenu-promo main > header div.titre-hero span.price, main > header div.titre-hero section#promotion article div.contenu-promo span.price, section#promotion article div.contenu-promo p.first-price, section#promotion article div.contenu-promo main > header div.titre-hero span.first-price, main > header div.titre-hero section#promotion article div.contenu-promo span.first-price {
+section#promotion article div.contenu-promo p.price, section#promotion article div.contenu-promo p.first-price {
   margin: 2rem 0;
   font-size: 3rem;
 }
 
-section#promotion article div.contenu-promo p.first-price, section#promotion article div.contenu-promo main > header div.titre-hero span.first-price, main > header div.titre-hero section#promotion article div.contenu-promo span.first-price {
+section#promotion article div.contenu-promo p.first-price {
   color: var(--rougeorange);
   text-decoration: line-through;
 }
@@ -1009,10 +983,34 @@ section#question div.contenu-question {
   display: flex;
 }
 
+section#question div.contenu-question div.info {
+  position: relative;
+  top: -4rem;
+  margin: 0 5rem;
+}
+
+section#question div.contenu-question div.info img {
+  margin: 2rem auto;
+}
+
 section#question div.contenu-question div.info address {
   letter-spacing: .25rem;
   line-height: 2rem;
   text-transform: italic;
+}
+
+section#question div.contenu-question div.info ul.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style-type: none;
+}
+
+section#question div.contenu-question div.info ul.social img {
+  width: 2rem;
 }
 
 section#question div.contenu-question form {
@@ -1026,6 +1024,7 @@ section#question div.contenu-question form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: auto;
 }
 
 section#question div.contenu-question form input {
@@ -1073,6 +1072,11 @@ header div#sticky {
           align-items: center;
 }
 
+header div#sticky img {
+  width: 2rem;
+  margin: 0 1rem;
+}
+
 header div#sticky nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1099,27 +1103,24 @@ header div#sticky nav ul a {
   padding: 1rem;
 }
 
-header div#sticky ul.langue {
+header div#sticky ul.client, header div#sticky ul.langue {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 2rem 0 auto;
   list-style-type: none;
 }
 
-header div#sticky ul.langue a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-decoration: none;
-  color: var(--noir);
+header div#sticky ul.langue {
+  margin: 0 2rem 0 auto;
 }
 
-header div#sticky ul.langue a:first-of-type:after {
-  content: "";
-  width: 1px;
-  height: 5px;
-  background-color: var(noir);
+header div#sticky ul.langue li {
+  margin: 0 .2rem;
+}
+
+header div#sticky a > img.up {
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
 }
 
 div.sticky {

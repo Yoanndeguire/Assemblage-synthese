@@ -4,6 +4,10 @@ header{
     & div#sticky{
         display: flex;
         align-items: center;
+        & img{
+            width: 2rem;
+            margin: 0 1rem;
+        }
         & nav{
             display: flex;
             width: 80%;
@@ -18,21 +22,20 @@ header{
                 }
             }
         }
-        & ul.langue{
+        & ul.client{
             display: flex;
-            margin: 0 2rem 0 auto;
             list-style-type: none;
-            & a{
-                @include hyperlien;
-                &:first-of-type{
-                    &:after{
-                        content: "";
-                        width: 1px;
-                        height: 5px;
-                        background-color: var(noir);
-                    }
-                }
+
+        }
+        & ul.langue{
+            @extend ul.client;
+            margin: 0 2rem 0 auto;
+            & li{
+                margin: 0 .2rem;
             }
+        }
+        & a>img.up{
+            transform: rotateZ(-90deg);
         }
     }
 }
