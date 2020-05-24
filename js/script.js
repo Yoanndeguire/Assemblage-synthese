@@ -14,6 +14,8 @@ $(function(){
 
 });
 
+
+//Focus sur la langue
 $(function(){
     $('.EN').click(function(){
         $(this).toggleClass('onFocus');
@@ -26,6 +28,27 @@ $(function(){
 });
 
 
+//barre de defilement menu
+const header = document.querySelector('#header');
+const nav = header.querySelector('nav');
+const a = nav.querySelector('nav');
+const soulignement = header.querySelector('.soulignement');
+const li = Array.from(nav.children);
+
+
+// // $(function(){
+// //     $(li).mouseenter(function{
+// //         soulignement
+// //     });
+// // });
+
+// const li = header.querySelector('.cible');
+// const cible = li.position();
+// $(function(){
+//         $('.cible').mouseover(function(){
+//             $(soulignement).appendTo('.cible');
+//         });
+// });
 
 //----CAROUSEL----
 

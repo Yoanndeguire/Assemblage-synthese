@@ -1,9 +1,24 @@
+@keyframes hover-nav{
+    from{color: var(--noir);}
+    to{color: var(--rougeorange);}
+}
+@keyframes hover-client{
+    from{background-color: none;}
+    to{background-color: var(--bleu);}
+}
+@keyframes hover-langue{
+    from{background-color: none;}
+    to{background-color: var(--rose);}
+}
+
 header{
     height: 3rem;
     background-color: rgba(255, 255, 255, 0.473);
-    & div#sticky{
+    & div{
+        position: relative;
         display: flex;
         align-items: center;
+        z-index: 1000;
         & img{
             width: 2rem;
             margin: 0 1rem;
@@ -19,21 +34,52 @@ header{
                 & a{
                     @include hyperlien;
                     padding: 1rem;
+                    &:hover{
+                        animation: hover-nav;
+                        animation-duration: .2s;
+                        animation-fill-mode: forwards;
+                    }
                 }
             }
         }
+
+        & div.soulignement{
+            position: absolute;
+            width: 5rem;
+            height: 5px;
+            bottom: 0;
+            background-color: var(--rose);
+            z-index: 100;
+        }
+
         & ul.client{
             display: flex;
             list-style-type: none;
             margin-right: 8rem;
+            & li>img{
+                border-radius: 50%;
+                cursor: pointer;
+                &:hover{
+                    animation: hover-client;
+                    animation-duration: .2s;
+                    animation-fill-mode: forwards;
+                }
+            }
         }
         & ul.langue{
             @extend ul.client;
             margin: 0 2rem 0 auto;
             & li{
                 margin: 0 .2rem;
+                // border: 1px solid transparent;
+                border-radius: 50%;
                 opacity: .3;
                 cursor: pointer;
+                &:hover{
+                    animation: hover-langue;
+                    animation-duration: .2s;
+                    animation-fill-mode: forwards;
+                }
             }
             & li.onFocus{
                 opacity: 1;
@@ -46,6 +92,14 @@ header{
         & a#up{
             position: absolute;
             right: 8rem;
+            & img{
+                border-radius: 50%;
+                &:hover{
+                    animation: hover-langue;
+                    animation-duration: .2s;
+                    animation-fill-mode: forwards;
+                }
+            }
         }
 
         & a.hidden{

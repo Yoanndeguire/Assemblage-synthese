@@ -31,8 +31,14 @@ section#promotion{
     & a{
         @include hyperlien;
         @include text-roboto;
+        @include click;
         margin: 4em 0;
         padding: .8rem;
-        @include click;
+        transition: .2s;
+        &:hover{
+            background-color: var(--rougeorange);
+            border-color: var(--rougeorange);
+            color: var(--blanc);
+        }
     }
 }

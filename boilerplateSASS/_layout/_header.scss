@@ -16,7 +16,9 @@ main>header{
     display: flex;
     flex-direction: column;
     position: relative;
-    height: 100vh;
+    min-height: 80vh;
+    max-height: 80vh;
+    margin: 0 0 6rem 0;
     overflow: hidden;
     & div.titre-hero{
         position: relative;
@@ -100,5 +102,24 @@ main>header{
 
         }
 
+    }
+    div.ariane{
+        @include text-roboto;
+        position: absolute;
+    
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 1rem;
+        color: var(--blanc);
+        background-color: var(--rose);
+        & a{
+            @include hyperlien;
+            @include text-roboto;
+            color: var(--blanc);
+            &:hover{
+                color: var(--bleu);
+            }
+        }
     }
 }

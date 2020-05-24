@@ -1,3 +1,8 @@
+@keyframes hover-fleche{
+    from{background-color: none;}
+    to{background-color: var(--bleu);}
+}
+
 .carousel{
     @include flex-column-center;
     position: relative;
@@ -15,6 +20,12 @@
         & img{
             width: 3rem;
             z-index: 100;
+            border-radius: 50%;
+            &:hover{
+                animation: hover-fleche;
+                animation-duration: .2s;
+                animation-fill-mode: forwards;
+            }
         }
     }
     
@@ -69,6 +80,19 @@
             margin: 0 12px;
             background-color: rgba(0,0,0,0.3);
             cursor: pointer;
+            &:first-of-type{
+                &:hover{
+                    background-color: var(--jaune);
+                }
+            }
+            &:last-of-type{
+                &:hover{
+                    background-color: var(--bleu);
+                }
+            }
+            &:hover{
+                background-color: var(--rose);
+            }
         }
         & .focus{
             background-color: rgba(0,0,0,0.7);

@@ -1,3 +1,12 @@
+@keyframes hover-social{
+    from{background-color: none;}
+    to{background-color: var(--bleu);}
+}
+@keyframes hover-form{
+    from{background-color: var(--rose);}
+    to{background-color: var(--jaune);}
+}
+
 section#question{
     @include flex-column-center;
     justify-content: space-around;
@@ -25,6 +34,13 @@ section#question{
                 list-style-type: none;
                 & img{
                     width: 2rem;
+                    border-radius: 50%;
+                    &:hover{
+                        animation: hover-social;
+                        animation-duration: .2s;
+                        animation-fill-mode: forwards;
+                    }
+                    
                 }
             }
         }
@@ -39,6 +55,11 @@ section#question{
                 border: none;
                 border-radius: 3px;
                 background-color: var(--rose);
+                &:focus{
+                    animation:hover-form;
+                    animation-duration: .2s;
+                    animation-fill-mode: forwards;
+                }
                 &:last-of-type{
                     @include click;
                     width: 10em;
