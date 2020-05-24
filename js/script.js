@@ -4,8 +4,10 @@ $(function(){
     $(window).on('scroll', function(){
         if($(this).scrollTop()){
             $('#sticky').addClass('sticky');
+            $('#up').removeClass('hidden')
         }else{
             $('#sticky').removeClass('sticky');
+            $('#up').addClass('hidden')
         }
     });
 

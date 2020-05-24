@@ -155,6 +155,7 @@ main > header div.titre-hero h1 strong::after {
   content: 'VOYAGER';
   position: absolute;
   top: 0;
+  left: 0;
   font-size: 9rem;
   color: var(--rose);
   opacity: .5;
@@ -1121,6 +1122,10 @@ header div#sticky ul.langue li {
 header div#sticky a > img.up {
   -webkit-transform: rotateZ(-90deg);
           transform: rotateZ(-90deg);
+}
+
+header div#sticky a.hidden {
+  display: none;
 }
 
 div.sticky {

@@ -37,6 +37,10 @@ header{
         & a>img.up{
             transform: rotateZ(-90deg);
         }
+
+        & a.hidden{
+            display: none;
+        }
     }
 }
 
