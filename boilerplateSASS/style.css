@@ -111,6 +111,24 @@ footer p:last-of-type a {
   }
 }
 
+@-webkit-keyframes defilement {
+  from {
+    right: -1000px;
+  }
+  to {
+    right: -450px;
+  }
+}
+
+@keyframes defilement {
+  from {
+    right: -1000px;
+  }
+  to {
+    right: -450px;
+  }
+}
+
 main > header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -121,6 +139,7 @@ main > header {
           flex-direction: column;
   position: relative;
   height: 100vh;
+  overflow: hidden;
 }
 
 main > header div.titre-hero {
@@ -208,8 +227,15 @@ main > header p.art:after {
   width: 50rem;
   height: 10px;
   top: 100px;
-  right: -1000px;
   background-color: var(--rose);
+  -webkit-animation: defilement;
+          animation: defilement;
+  -webkit-animation-duration: 45s;
+          animation-duration: 45s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
 }
 
 section.listeProduits div.liste {
@@ -307,6 +333,7 @@ section#produits {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  overflow: hidden;
 }
 
 section#produits div.titre-section {
@@ -371,6 +398,7 @@ section#produits article.detail h3:after {
   width: 40vw;
   height: 5px;
   background-color: var(--noir);
+  overflow: hidden;
 }
 
 section#produits article.detail img {

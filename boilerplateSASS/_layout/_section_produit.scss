@@ -1,6 +1,8 @@
 section#produits{
     @include flex-column-center;
     text-align: center;
+    overflow: hidden;
+
 
     & div.titre-section{
         position: relative;
@@ -48,6 +50,7 @@ section#produits{
                 width: 40vw;
                 height: 5px;
                 background-color: var(--noir);
+                overflow: hidden;
             }
         }
         & img{
