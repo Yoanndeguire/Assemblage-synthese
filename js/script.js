@@ -4,15 +4,27 @@ $(function(){
     $(window).on('scroll', function(){
         if($(this).scrollTop()){
             $('#sticky').addClass('sticky');
-            $('#up').removeClass('hidden')
+            $('#up').removeClass('hidden');
         }else{
             $('#sticky').removeClass('sticky');
-            $('#up').addClass('hidden')
+            $('#up').addClass('hidden');
         }
     });
 
 
 });
+
+$(function(){
+    $('.EN').click(function(){
+        $(this).toggleClass('onFocus');
+        $('.FR').toggleClass('onFocus');
+    })
+    $('.FR').click(function(){
+        $(this).toggleClass('onFocus');
+        $('.EN').toggleClass('onFocus');
+    })
+});
+
 
 
 //----CAROUSEL----
