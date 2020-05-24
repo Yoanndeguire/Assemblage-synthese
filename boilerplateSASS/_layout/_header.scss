@@ -17,7 +17,8 @@ main>header{
         margin: 0 0 0 5em;
         & h1{
             position: relative;
-            top: 3.5em;
+            top: 8em;
+            left: 5rem;
             font-weight: 300;
             color: var(--gris);
             & strong{
@@ -54,6 +55,9 @@ main>header{
         }
         & p{
             @include seriffont;
+            position: relative;
+            top: 5rem;
+            left: 5rem;
             color: var(--gris);
         }
 
@@ -68,12 +72,23 @@ main>header{
     }
 
     & p.art{
-        // position: absolute;
-        margin: 0 3em 0 auto;
         @include seriffont;
+        position: absolute;
+        right: 25rem;
+        top: 28rem;
         font-size: 9rem;
         color: var(--rose);
         z-index: 100;
+        &:after{
+            content: '';
+            position: absolute;
+            width: 50rem;
+            height: 10px;
+            top: 100px;
+            // right: -450px;
+            right: -1000px;
+            background-color: var(--rose);
+        }
 
     }
 }

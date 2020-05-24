@@ -2,7 +2,14 @@ footer{
     @include flex-column-center;
     background-color: var(--rose);
     & p:last-of-type{
+        width: 80%;
         font-size: .4rem;
+        text-align: center;
+        line-height: .5rem;
         opacity: .5;
+        & a{
+            color: var(--noir);
+            text-decoration: none;
+        }
     }
 }

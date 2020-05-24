@@ -25,17 +25,27 @@ header{
         & ul.client{
             display: flex;
             list-style-type: none;
-
+            margin-right: 8rem;
         }
         & ul.langue{
             @extend ul.client;
             margin: 0 2rem 0 auto;
             & li{
                 margin: 0 .2rem;
+                opacity: .3;
+                cursor: pointer;
+            }
+            & li.onFocus{
+                opacity: 1;
             }
         }
         & a>img.up{
             transform: rotateZ(-90deg);
+        }
+
+        & a#up{
+            position: absolute;
+            right: 8rem;
         }
 
         & a.hidden{

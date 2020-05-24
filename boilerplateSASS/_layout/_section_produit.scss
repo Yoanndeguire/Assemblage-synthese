@@ -44,8 +44,8 @@ section#produits{
                 content: '';
                 position: absolute;
                 top: 13rem;
-                right: -15rem;
-                width: 30rem;
+                right: -30rem;
+                width: 40vw;
                 height: 5px;
                 background-color: var(--noir);
             }
@@ -85,13 +85,14 @@ section#produits{
         width: 100vw;
         left: 0;
         right: 0;
+        margin: 0 0 3rem 0;
         font-size: 3rem;
         &:before{
             content: '';
             position: absolute;
             left: 0;
             top: 2rem;
-            width: 35rem;
+            width: 30vw;
             height: 10px;
             background-color: var(--rose);
         }
@@ -100,7 +101,7 @@ section#produits{
             position: absolute;
             right: 0;
             top: 2rem;
-            width: 35rem;
+            width: 30vw;
             height: 10px;
             background-color: var(--rose);
         }
@@ -108,7 +109,7 @@ section#produits{
 
     & div.suggestions{
         display: flex;
-        margin: 0 0 4rem 0;
+        margin: 0 0 5rem 0;
         & article {
             margin: 0 2rem;
             width: 360px;

@@ -55,8 +55,16 @@ footer {
 }
 
 footer p:last-of-type {
+  width: 80%;
   font-size: .4rem;
+  text-align: center;
+  line-height: .5rem;
   opacity: .5;
+}
+
+footer p:last-of-type a {
+  color: var(--noir);
+  text-decoration: none;
 }
 
 @-webkit-keyframes haut {
@@ -122,7 +130,8 @@ main > header div.titre-hero {
 
 main > header div.titre-hero h1 {
   position: relative;
-  top: 3.5em;
+  top: 8em;
+  left: 5rem;
   font-weight: 300;
   color: var(--gris);
 }
@@ -169,6 +178,9 @@ main > header div.titre-hero h1 strong::after {
 
 main > header div.titre-hero p {
   font-family: 'Playfair Display', serif;
+  position: relative;
+  top: 5rem;
+  left: 5rem;
   color: var(--gris);
 }
 
@@ -181,11 +193,23 @@ main > header img {
 }
 
 main > header p.art {
-  margin: 0 3em 0 auto;
   font-family: 'Playfair Display', serif;
+  position: absolute;
+  right: 25rem;
+  top: 28rem;
   font-size: 9rem;
   color: var(--rose);
   z-index: 100;
+}
+
+main > header p.art:after {
+  content: '';
+  position: absolute;
+  width: 50rem;
+  height: 10px;
+  top: 100px;
+  right: -1000px;
+  background-color: var(--rose);
 }
 
 section.listeProduits div.liste {
@@ -343,8 +367,8 @@ section#produits article.detail h3:after {
   content: '';
   position: absolute;
   top: 13rem;
-  right: -15rem;
-  width: 30rem;
+  right: -30rem;
+  width: 40vw;
   height: 5px;
   background-color: var(--noir);
 }
@@ -406,6 +430,7 @@ section#produits h4 {
   width: 100vw;
   left: 0;
   right: 0;
+  margin: 0 0 3rem 0;
   font-size: 3rem;
 }
 
@@ -414,7 +439,7 @@ section#produits h4:before {
   position: absolute;
   left: 0;
   top: 2rem;
-  width: 35rem;
+  width: 30vw;
   height: 10px;
   background-color: var(--rose);
 }
@@ -424,7 +449,7 @@ section#produits h4:after {
   position: absolute;
   right: 0;
   top: 2rem;
-  width: 35rem;
+  width: 30vw;
   height: 10px;
   background-color: var(--rose);
 }
@@ -433,7 +458,7 @@ section#produits div.suggestions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 0 4rem 0;
+  margin: 0 0 5rem 0;
 }
 
 section#produits div.suggestions article {
@@ -1109,6 +1134,7 @@ header div#sticky ul.client, header div#sticky ul.langue {
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
+  margin-right: 8rem;
 }
 
 header div#sticky ul.langue {
@@ -1117,11 +1143,22 @@ header div#sticky ul.langue {
 
 header div#sticky ul.langue li {
   margin: 0 .2rem;
+  opacity: .3;
+  cursor: pointer;
+}
+
+header div#sticky ul.langue li.onFocus {
+  opacity: 1;
 }
 
 header div#sticky a > img.up {
   -webkit-transform: rotateZ(-90deg);
           transform: rotateZ(-90deg);
+}
+
+header div#sticky a#up {
+  position: absolute;
+  right: 8rem;
 }
 
 header div#sticky a.hidden {
