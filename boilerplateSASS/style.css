@@ -1444,4 +1444,82 @@ div.sticky {
   background-color: rgba(255, 255, 255, 0.8);
   z-index: 2000;
 }
+
+div.admin-interface, div.admin-interface div.admin-titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.admin-interface div.admin-titre {
+  margin: 0 0 2rem 0;
+}
+
+div.admin-interface div.admin-titre h1 {
+  font-family: 'Playfair Display', serif;
+  margin: 1em;
+  color: var(--gris);
+  font-size: 6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+div.admin-interface div.admin-titre img {
+  position: relative;
+  top: -5rem;
+}
+
+div.admin-interface form.index {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+  grid-gap: 20px;
+}
+
+div.admin-interface form.index input {
+  letter-spacing: .25rem;
+  line-height: 2rem;
+  padding: 0 1rem;
+  border: none;
+  background-color: var(--rose);
+}
+
+div.admin-interface form.index input:focus {
+  background-color: var(--jaune);
+}
+
+div.admin-interface form.index a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: var(--noir);
+  border: 3px solid var(--gris);
+  border-radius: 1rem;
+  color: var(--gris);
+  font-weight: 800;
+  letter-spacing: .25rem;
+  line-height: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+div.admin-interface form.index a:hover {
+  background-color: var(--jaune);
+  border-color: var(--jaune);
+  color: var(--blanc);
+}
 /*# sourceMappingURL=style.css.map */
