@@ -1,0 +1,31 @@
+form.edit-create{
+    position: relative;
+    top: -3rem;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    row-gap: 20px;
+    text-align: center;
+    & label{
+        @include text-roboto;
+    }
+    & input{
+        @include text-roboto;
+        padding: 0 1rem;
+        border: none;
+        background-color: var(--rose);
+        transition: .2s;
+        &:focus{
+            background-color: var(--jaune);
+        }
+
+        &:last-of-type{
+            @include click;
+            background-color: var(--blanc);
+            &:hover{
+                background-color: var(--bleu);
+                border-color: var(--bleu);
+                color: var(--blanc);
+            }
+        }
+    }
+}
