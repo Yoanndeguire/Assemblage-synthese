@@ -1,3 +1,7 @@
+@keyframes about{
+    from{background-color: var(-blanc);}
+    to{background-color: var(--jaune);}
+}
 section#about{
     @include flex-column-center;
     position: relative;
@@ -44,4 +48,10 @@ section#about{
         width: 650px;
         z-index: 100;
     }
+}
+
+section#about.change{
+    animation: about;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 }

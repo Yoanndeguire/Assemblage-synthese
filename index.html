@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>artemis</title>
     <link rel="stylesheet" href="boilerplateSASS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet"></head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>   
 <body>
     <div class="inteface">
+        <div class="animation"><p class="animate__animated animate__backInDown">Bienvenue</p></div>
         <header id="header">
             <div id="sticky">
                 <img src="images/logo-artemis.png" alt="le logo d'Artémis">
@@ -40,7 +42,7 @@
             <header class="hero">
                 <div class="titre-hero">
                     <p class="covid">covid-19</p>
-                    <h1>Faire<br><strong>Voyager</strong></h1>
+                    <h1>Faire<br><strong class="index">Voyager</strong></h1>
                 </div>
                 <img src="images/hero-assets/hero01.png" alt="photo de la statue de pigeon">
                 <p class="art">L'art</p>
@@ -139,7 +141,7 @@
                 <p>Vérifier votre accessibilité à la livraison gratuite<br>Entrer votre code postal</p>
                 <form action="adresse">
                     <input type="text" placeholder="J7Z 4P2">
-                    <input type="submit" class="submit" value="Vérifier">
+                    <input type="submit" class="submit bouton-livraison" value="Vérifier">
                 </form>
             </section>
             <section id="about">

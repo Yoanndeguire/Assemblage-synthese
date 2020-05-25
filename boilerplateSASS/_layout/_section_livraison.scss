@@ -1,3 +1,7 @@
+@keyframes livraison{
+    from{background-color: var(-jaune);}
+    to{background-color: var(--bleu);}
+}
 section#livraison{
     @include flex-column-center;
     background-color: var(--jaune);
@@ -22,10 +26,21 @@ section#livraison{
             background-color: var(--jaune);
             transition: .2s;
             &:hover{
-                border-color: var(--gris);
-                color: var(--jaune);
-                background-color: var(--gris);
+                border-color: var(--rougeorange);
+                color: var(--rougeorange);
             }
         }
+
+        & input.change{
+            animation: livraison;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+        
+        }
     }
+}
+section#livraison.change{
+    animation: livraison;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 }

@@ -158,47 +158,21 @@ footer p:last-of-type a {
   }
 }
 
-@-webkit-keyframes haut-petit {
-  from {
-    opacity: 1;
-    top: 0;
+@-webkit-keyframes couleur {
+  form {
+    color: var(--rose);
   }
   to {
-    opacity: 0;
-    top: -100%;
+    color: var(--rougeorange);
   }
 }
 
-@keyframes haut-petit {
-  from {
-    opacity: 1;
-    top: 0;
+@keyframes couleur {
+  form {
+    color: var(--rose);
   }
   to {
-    opacity: 0;
-    top: -100%;
-  }
-}
-
-@-webkit-keyframes bas-petit {
-  from {
-    opacity: 1;
-    top: 0;
-  }
-  to {
-    opacity: 0;
-    top: 100%;
-  }
-}
-
-@keyframes bas-petit {
-  from {
-    opacity: 1;
-    top: 0;
-  }
-  to {
-    opacity: 0;
-    top: 100%;
+    color: var(--rougeorange);
   }
 }
 
@@ -302,6 +276,16 @@ main > header div.titre-hero h1 strong::after {
   z-index: 1;
 }
 
+main > header div.titre-hero h1 strong.index::before {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+main > header div.titre-hero h1 strong.index::after {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
 main > header div.titre-hero p {
   font-family: 'Playfair Display', serif;
   position: relative;
@@ -325,6 +309,14 @@ main > header p.art {
   top: 28rem;
   font-size: 9rem;
   color: var(--rose);
+  -webkit-animation: couleur;
+          animation: couleur;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
   z-index: 100;
 }
 
@@ -728,6 +720,24 @@ section#produits div.suggestions article a:hover {
   background-color: var(--bleu);
 }
 
+@media screen and (min-width: 1080px) {
+  article.detail {
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  article.detail {
+    width: 580px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  article.detail {
+    width: 1120px;
+  }
+}
+
 @-webkit-keyframes hover-fleche {
   from {
     background-color: none;
@@ -893,6 +903,24 @@ a.voirProduit:hover {
   background-color: var(--bleu);
 }
 
+@-webkit-keyframes commander {
+  from {
+    background-color: var(-bleu);
+  }
+  to {
+    background-color: var(--jaune);
+  }
+}
+
+@keyframes commander {
+  from {
+    background-color: var(-bleu);
+  }
+  to {
+    background-color: var(--jaune);
+  }
+}
+
 section#commander {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -964,6 +992,33 @@ section#commander p:last-of-type {
   margin: 1em 0 6rem 0;
   font-size: 3rem;
   color: var(--blanc);
+}
+
+section#commander.change {
+  -webkit-animation: commander;
+          animation: commander;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes about {
+  from {
+    background-color: var(-blanc);
+  }
+  to {
+    background-color: var(--jaune);
+  }
+}
+
+@keyframes about {
+  from {
+    background-color: var(-blanc);
+  }
+  to {
+    background-color: var(--jaune);
+  }
 }
 
 section#about {
@@ -1039,6 +1094,33 @@ section#about img {
   z-index: 100;
 }
 
+section#about.change {
+  -webkit-animation: about;
+          animation: about;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes horaire {
+  from {
+    background-color: var(-jaune);
+  }
+  to {
+    background-color: var(--bleu);
+  }
+}
+
+@keyframes horaire {
+  from {
+    background-color: var(-jaune);
+  }
+  to {
+    background-color: var(--bleu);
+  }
+}
+
 section#horaire {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1102,6 +1184,33 @@ section#horaire div.horaire-contenu p {
   width: 45%;
 }
 
+section#horaire.change {
+  -webkit-animation: horaire;
+          animation: horaire;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes livraison {
+  from {
+    background-color: var(-jaune);
+  }
+  to {
+    background-color: var(--bleu);
+  }
+}
+
+@keyframes livraison {
+  from {
+    background-color: var(-jaune);
+  }
+  to {
+    background-color: var(--bleu);
+  }
+}
+
 section#livraison {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1162,9 +1271,44 @@ section#livraison form input.submit {
 }
 
 section#livraison form input.submit:hover {
-  border-color: var(--gris);
-  color: var(--jaune);
-  background-color: var(--gris);
+  border-color: var(--rougeorange);
+  color: var(--rougeorange);
+}
+
+section#livraison form input.change {
+  -webkit-animation: livraison;
+          animation: livraison;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+section#livraison.change {
+  -webkit-animation: livraison;
+          animation: livraison;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes promotion {
+  from {
+    background-color: var(-blanc);
+  }
+  to {
+    background-color: var(--jaune);
+  }
+}
+
+@keyframes promotion {
+  from {
+    background-color: var(-blanc);
+  }
+  to {
+    background-color: var(--jaune);
+  }
 }
 
 section#promotion {
@@ -1242,6 +1386,15 @@ section#promotion a:hover {
   background-color: var(--rougeorange);
   border-color: var(--rougeorange);
   color: var(--blanc);
+}
+
+section#promotion.change {
+  -webkit-animation: promotion;
+          animation: promotion;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 @media screen and (min-width: 1080px) {
@@ -1884,5 +2037,67 @@ form.edit-create input:last-of-type:hover {
   background-color: var(--bleu);
   border-color: var(--bleu);
   color: var(--blanc);
+}
+
+@-webkit-keyframes intro {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes intro {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+div.animation {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--bleu);
+  -webkit-animation: intro;
+          animation: intro;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  z-index: 5500;
+}
+
+div.animation p.animate__animated {
+  font-family: 'Playfair Display', serif;
+  margin: 1em;
+  color: var(--gris);
+  font-size: 6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+  top: 15rem;
+  color: var(--blanc);
+  -webkit-animation: backInDown;
+          animation: backInDown;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 /*# sourceMappingURL=style.css.map */

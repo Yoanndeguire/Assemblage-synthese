@@ -6,13 +6,10 @@
     from{ opacity: 0; top: 0;}
     to{opacity: .5; top: 100%;}
 }
-@keyframes haut-petit{
-    from{ opacity: 1; top: 0;}
-    to{opacity: 0; top: -100%;}
-}
-@keyframes bas-petit{
-    from{ opacity: 1; top: 0;}
-    to{opacity: 0; top: 100%;}
+
+@keyframes couleur{
+    form{color: var(--rose);}
+    to{color:var(--rougeorange);}
 }
 
 @keyframes defilement{
@@ -75,6 +72,16 @@ main>header{
 
                 }
             }
+            
+            & strong.index{
+                &::before{
+                    animation-delay: 2s;
+                }
+                &::after{
+                    animation-delay: 2s;
+                }
+
+            }
         }
         & p{
             @include seriffont;
@@ -101,6 +108,10 @@ main>header{
         top: 28rem;
         font-size: 9rem;
         color: var(--rose);
+        animation: couleur;
+        animation-duration: 15s;
+        animation-fill-mode: forwards;
+        animation-delay: 2s;
         z-index: 100;
         &:after{
             content: '';

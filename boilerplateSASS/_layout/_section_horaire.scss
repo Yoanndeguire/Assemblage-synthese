@@ -1,3 +1,8 @@
+@keyframes horaire{
+    from{background-color: var(-jaune);}
+    to{background-color: var(--bleu);}
+}
+
 section#horaire{
     @include flex-column-center;
     background-color: var(--jaune);
@@ -34,5 +39,11 @@ section#horaire{
             width: 45%;
         }
     }
+}
+
+section#horaire.change{
+    animation: horaire;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 }
 

@@ -22,11 +22,8 @@ $(function(){
         $('.EN').toggleClass('onFocus');
     })
 
-    //POP_UP SUPPRIMER
-    // $('.delete').click(function(){
-    //     $(this).after("<div class='popup'><p>Voulez-vous supprimer cet item</p><div><button class='option'>Supprimer</button><button class='option'>Annuler</button></div></div>");
-
-    // })
+    //POP_UP SUPPRIMER && PANIER
+  
     $('.delete').click(function(){
         $('.popup').toggleClass('close');
 
@@ -39,6 +36,26 @@ $(function(){
     $('.option').click(function(){
         $('.popup').toggleClass('close');
     })
+
+
+    //EFFET SPECIAL COULEUR MOUAHAHAHAH
+
+    $('#horaire').mouseenter(function(){
+        $(this).addClass('change');
+    });
+    $('#commander').mouseenter(function(){
+        $(this).addClass('change');
+    });
+    $('#promotion').mouseenter(function(){
+        $(this).addClass('change');
+    });
+    $('#about').mouseenter(function(){
+        $(this).addClass('change');
+    });
+    $('#livraison').mouseenter(function(){
+        $(this).addClass('change');
+        $('.bouton-livraison').addClass('change');
+    });
     
 });
 

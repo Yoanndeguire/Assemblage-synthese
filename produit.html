@@ -59,7 +59,12 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae deserunt eveniet sunt possimus, similique exercitationem veritatis voluptas, tempore architecto aspernatur atque officia modi! Sed reprehenderit aliquam nam fuga incidunt quos.</p>
                     <article class="detail">
                         <h3>Mick</h3>
-                        <img src="images/mick/mick-1120.jpg" alt="Photo de la statue Mick">
+                        <picture>
+                            <source media="(min-width: 1800px)" srcset="images/mick/mick-1120.jpg">
+                            <source media="(min-width: 1200px)" srcset="images/mick/mick-580.jpg">
+                            <source media="(min-width: 1080px)" srcset="images/mick/mick-360.jpg">
+                            <img src="images/mick/mick-1120.jpg">
+                          </picture> 
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus at vero non necessitatibus reprehenderit eos praesentium, totam a perspiciatis nihil accusamus ut dolor officia ipsa.</p>
                         <div class="prix-panier">
                             <p>199.00$</p>
@@ -116,7 +121,7 @@
                 <p>Vérifier votre accessibilité à la livraison gratuite<br>Entrer votre code postal</p>
                 <form action="adresse">
                     <input type="text" placeholder="J7Z 4P2">
-                    <input type="submit" class="submit" value="Vérifier">
+                    <input type="submit" class="submit bouton-livraison" value="Vérifier">
                 </form>
             </section>
             <section id="question">

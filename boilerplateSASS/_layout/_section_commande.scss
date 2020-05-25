@@ -1,3 +1,8 @@
+@keyframes commander{
+    from{background-color: var(-bleu);}
+    to{background-color: var(--jaune);}
+}
+
 section#commander{
     @include flex-column-center;
     background-color: var(--bleu);
@@ -43,4 +48,10 @@ section#commander{
         font-size: 3rem;
         color: var(--blanc);
     }
+}
+
+section#commander.change{
+    animation: commander;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 }

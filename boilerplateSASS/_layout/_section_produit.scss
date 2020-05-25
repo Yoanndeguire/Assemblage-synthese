@@ -150,3 +150,23 @@ section#produits{
     }
 
 }
+
+
+@media screen and (min-width:1080px){
+    article.detail{
+        width: 500px;
+    }
+
+}
+@media screen and (min-width:1200px){
+    article.detail{
+        width: 580px;
+    }
+
+}
+@media screen and (min-width:1800px){
+    article.detail{
+        width: 1120px;
+    }
+
+}
