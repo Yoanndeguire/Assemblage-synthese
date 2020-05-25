@@ -5,6 +5,7 @@ div.admin-interface{
         margin: 0 0 2rem 0;
         & h1{
             @include h2;
+            margin-top: 2rem;
         }
         & img{
             position: relative;

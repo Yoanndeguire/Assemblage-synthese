@@ -1469,6 +1469,7 @@ div.admin-interface div.admin-titre h1 {
   font-size: 6rem;
   font-weight: 500;
   text-transform: uppercase;
+  margin-top: 2rem;
 }
 
 div.admin-interface div.admin-titre img {
@@ -1531,6 +1532,7 @@ h2 {
   font-weight: 500;
   text-transform: uppercase;
   font-size: 2rem;
+  margin-bottom: 4rem;
 }
 
 div.admin-liste {
@@ -1631,6 +1633,36 @@ ul.admin-index .rose:hover {
 
 ul.admin-index .bleu:hover {
   background-color: var(--bleu);
+}
+
+div.edit {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  position: relative;
+  top: -2rem;
+  width: 80%;
+}
+
+div.edit div.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.edit div.container:last-of-type {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
 form.edit-create {

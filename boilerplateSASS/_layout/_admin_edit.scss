@@ -1,0 +1,16 @@
+div.edit{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 50px;
+    position: relative;
+    top: -2rem;
+    width: 80%;
+    & div.container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:last-of-type{
+            justify-content: start;
+        }
+    }
+}
