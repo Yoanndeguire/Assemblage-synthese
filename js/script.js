@@ -1,5 +1,5 @@
-//STICKY MENU
 $(function(){
+    //STICKY MENU
 
     $(window).on('scroll', function(){
         if($(this).scrollTop()){
@@ -12,11 +12,7 @@ $(function(){
     });
 
 
-});
-
-
-//Focus sur la langue
-$(function(){
+    //Focus sur la langue
     $('.EN').click(function(){
         $(this).toggleClass('onFocus');
         $('.FR').toggleClass('onFocus');
@@ -25,7 +21,27 @@ $(function(){
         $(this).toggleClass('onFocus');
         $('.EN').toggleClass('onFocus');
     })
+
+    //POP_UP SUPPRIMER
+    // $('.delete').click(function(){
+    //     $(this).after("<div class='popup'><p>Voulez-vous supprimer cet item</p><div><button class='option'>Supprimer</button><button class='option'>Annuler</button></div></div>");
+
+    // })
+    $('.delete').click(function(){
+        $('.popup').toggleClass('close');
+
+    })
+    $('.panier').click(function(){
+        $('.popup').toggleClass('close');
+
+    })
+
+    $('.option').click(function(){
+        $('.popup').toggleClass('close');
+    })
+    
 });
+
 
 
 //barre de defilement menu

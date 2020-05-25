@@ -43,5 +43,22 @@ div.admin-liste{
                 }
             }
         }
+    
+        
+        
+    }
+    & div.popup{
+        @include popup;
+        & button:first-of-type{
+            &:hover{
+                background-color: var(--rougeorange);
+                border-color: var(--rougeorange);
+                color: var(--blanc);
+            }
+        }
+    }
+
+    & div.close{
+        display: none;
     }
 }

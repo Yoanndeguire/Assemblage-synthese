@@ -562,7 +562,7 @@ section#produits article.detail div.prix-panier p {
   margin: 0;
 }
 
-section#produits article.detail div.prix-panier a {
+section#produits article.detail div.prix-panier button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -580,10 +580,66 @@ section#produits article.detail div.prix-panier a {
   transition: .2s;
 }
 
-section#produits article.detail div.prix-panier a:hover {
+section#produits article.detail div.prix-panier button:hover {
   border-color: var(--bleu);
   color: var(--blanc);
   background-color: var(--bleu);
+}
+
+section#produits article.detail div.popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  align-items: center;
+  position: fixed;
+  width: 600px;
+  height: 200px;
+  top: 40%;
+  left: 40%;
+  background-color: var(--blanc);
+  -webkit-box-shadow: 1em 1em 1em var(--gris);
+          box-shadow: 1em 1em 1em var(--gris);
+  border-radius: 3rem;
+  z-index: 5000;
+  cursor: pointer;
+}
+
+section#produits article.detail div.popup p {
+  margin: auto;
+}
+
+section#produits article.detail div.popup button {
+  border: 3px solid var(--gris);
+  border-radius: 1rem;
+  color: var(--gris);
+  font-weight: 800;
+  letter-spacing: .25rem;
+  line-height: 2rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+section#produits article.detail div.popup button:hover {
+  background-color: var(--bleu);
+  border-color: var(--bleu);
+  color: var(--blanc);
+}
+
+section#produits article.detail div.popup button:last-of-type:hover {
+  background-color: var(--rougeorange);
+  border-color: var(--rougeorange);
+  color: var(--blanc);
+}
+
+section#produits article.detail div.close {
+  display: none;
 }
 
 section#produits h4 {
@@ -1661,6 +1717,62 @@ div.admin-liste article a:hover {
 div.admin-liste article a:last-of-type:hover {
   background-color: var(--rougeorange);
   border-color: var(--rougeorange);
+}
+
+div.admin-liste div.popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  align-items: center;
+  position: fixed;
+  width: 600px;
+  height: 200px;
+  top: 40%;
+  left: 40%;
+  background-color: var(--blanc);
+  -webkit-box-shadow: 1em 1em 1em var(--gris);
+          box-shadow: 1em 1em 1em var(--gris);
+  border-radius: 3rem;
+  z-index: 5000;
+  cursor: pointer;
+}
+
+div.admin-liste div.popup p {
+  margin: auto;
+}
+
+div.admin-liste div.popup button {
+  border: 3px solid var(--gris);
+  border-radius: 1rem;
+  color: var(--gris);
+  font-weight: 800;
+  letter-spacing: .25rem;
+  line-height: 2rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+div.admin-liste div.popup button:hover {
+  background-color: var(--bleu);
+  border-color: var(--bleu);
+  color: var(--blanc);
+}
+
+div.admin-liste div.popup button:first-of-type:hover {
+  background-color: var(--rougeorange);
+  border-color: var(--rougeorange);
+  color: var(--blanc);
+}
+
+div.admin-liste div.close {
+  display: none;
 }
 
 ul.admin-index {
