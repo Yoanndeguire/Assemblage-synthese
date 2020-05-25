@@ -111,6 +111,50 @@ footer p:last-of-type a {
   }
 }
 
+@-webkit-keyframes haut-petit {
+  from {
+    opacity: 1;
+    top: 0;
+  }
+  to {
+    opacity: 0;
+    top: -100%;
+  }
+}
+
+@keyframes haut-petit {
+  from {
+    opacity: 1;
+    top: 0;
+  }
+  to {
+    opacity: 0;
+    top: -100%;
+  }
+}
+
+@-webkit-keyframes bas-petit {
+  from {
+    opacity: 1;
+    top: 0;
+  }
+  to {
+    opacity: 0;
+    top: 100%;
+  }
+}
+
+@keyframes bas-petit {
+  from {
+    opacity: 1;
+    top: 0;
+  }
+  to {
+    opacity: 0;
+    top: 100%;
+  }
+}
+
 @-webkit-keyframes defilement {
   from {
     right: -1000px;
@@ -147,6 +191,18 @@ main > header {
 main > header div.titre-hero {
   position: relative;
   margin: 0 0 0 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 main > header div.titre-hero h1 {
@@ -1083,6 +1139,13 @@ section#promotion a:hover {
   background-color: var(--rougeorange);
   border-color: var(--rougeorange);
   color: var(--blanc);
+}
+
+@media screen and (min-width: 1080px) {
+  div.contenu-promo p:first-of-type {
+    height: 150px;
+    overflow: hidden;
+  }
 }
 
 @-webkit-keyframes hover-social {

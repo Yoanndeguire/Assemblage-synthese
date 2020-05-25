@@ -6,6 +6,14 @@
     from{ opacity: 0; top: 0;}
     to{opacity: .5; top: 100%;}
 }
+@keyframes haut-petit{
+    from{ opacity: 1; top: 0;}
+    to{opacity: 0; top: -100%;}
+}
+@keyframes bas-petit{
+    from{ opacity: 1; top: 0;}
+    to{opacity: 0; top: 100%;}
+}
 
 @keyframes defilement{
     from{ right:-1000px}
@@ -23,7 +31,10 @@ main>header{
     & div.titre-hero{
         position: relative;
         margin: 0 0 0 5em;
-
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
         & h1{
             position: relative;
             top: 8em;
