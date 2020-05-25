@@ -40,6 +40,53 @@ p {
   line-height: 2rem;
 }
 
+form.index {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+  grid-gap: 20px;
+}
+
+form.index input {
+  letter-spacing: .25rem;
+  line-height: 2rem;
+  padding: 0 1rem;
+  border: none;
+  background-color: var(--rose);
+}
+
+form.index input:focus {
+  background-color: var(--jaune);
+}
+
+form.index a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: var(--noir);
+  border: 3px solid var(--gris);
+  border-radius: 1rem;
+  color: var(--gris);
+  font-weight: 800;
+  letter-spacing: .25rem;
+  line-height: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+form.index a:hover {
+  background-color: var(--jaune);
+  border-color: var(--jaune);
+  color: var(--blanc);
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1540,53 +1587,6 @@ div.admin-interface div.admin-titre h1 {
 div.admin-interface div.admin-titre img {
   position: relative;
   top: -5rem;
-}
-
-div.admin-interface form.index {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
-  -ms-grid-rows: auto auto auto;
-      grid-template-rows: auto auto auto;
-  grid-gap: 20px;
-}
-
-div.admin-interface form.index input {
-  letter-spacing: .25rem;
-  line-height: 2rem;
-  padding: 0 1rem;
-  border: none;
-  background-color: var(--rose);
-}
-
-div.admin-interface form.index input:focus {
-  background-color: var(--jaune);
-}
-
-div.admin-interface form.index a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-decoration: none;
-  color: var(--noir);
-  border: 3px solid var(--gris);
-  border-radius: 1rem;
-  color: var(--gris);
-  font-weight: 800;
-  letter-spacing: .25rem;
-  line-height: 2rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-div.admin-interface form.index a:hover {
-  background-color: var(--jaune);
-  border-color: var(--jaune);
-  color: var(--blanc);
 }
 
 h2 {
