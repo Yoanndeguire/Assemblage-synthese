@@ -1522,4 +1522,41 @@ div.admin-interface form.index a:hover {
   border-color: var(--jaune);
   color: var(--blanc);
 }
+
+ul.admin-index {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  list-style-type: none;
+}
+
+ul.admin-index li > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: var(--noir);
+  letter-spacing: .25rem;
+  line-height: 2rem;
+  padding: 5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.048);
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+ul.admin-index li > a:hover {
+  background-color: var(--jaune);
+  border-radius: 2rem;
+}
+
+ul.admin-index .rose:hover {
+  background-color: var(--rose);
+}
+
+ul.admin-index .bleu:hover {
+  background-color: var(--bleu);
+}
 /*# sourceMappingURL=style.css.map */

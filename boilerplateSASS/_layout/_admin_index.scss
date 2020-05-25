@@ -1,0 +1,27 @@
+ul.admin-index{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 50px;
+    list-style-type: none;
+    & li>a{
+        @include hyperlien;
+        @include text-roboto;
+        padding: 5rem 1rem;
+        background-color: rgba(0, 0, 0, 0.048);
+        transition: .2s;
+        &:hover{
+            background-color: var(--jaune);
+            border-radius: 2rem;
+        }
+    }
+    & .rose{
+        &:hover{
+            background-color: var(--rose);
+        }
+    }
+    & .bleu{
+        &:hover{
+            background-color: var(--bleu);
+        }
+    }
+}
