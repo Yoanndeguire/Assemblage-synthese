@@ -29,6 +29,11 @@
         "_layout/_section_promo.scss",
         "_layout/_section_question.scss",
         "_layout/_navPrincipale.scss",
+        "_layout/_admin_connexion.scss",
+        "_layout/_admin_liste.scss",
+        "_layout/_admin_index.scss",
+        "_layout/_admin_edit.scss",
+        "_layout/_admin_create.scss",
         "_layout/_pub.scss"
     ],
     "names": [],
