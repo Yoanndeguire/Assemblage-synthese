@@ -2,6 +2,7 @@ div.admin-interface{
     @include flex-column-center;
     & div.admin-titre{
         @extend div.admin-interface;
+        height: 30%;
         margin: 0 0 2rem 0;
         & h1{
             @include h2;
@@ -10,7 +11,9 @@ div.admin-interface{
         & img{
             position: relative;
             top: -5rem;
+            flex-grow: 0;
+            flex-shrink: 0;
         }
     }
-    
+  
 }

@@ -3,6 +3,7 @@ ul.admin-index{
     grid-template-columns: auto auto auto;
     column-gap: 50px;
     list-style-type: none;
+    margin-bottom: 10rem;
     & li>a{
         @include hyperlien;
         @include text-roboto;

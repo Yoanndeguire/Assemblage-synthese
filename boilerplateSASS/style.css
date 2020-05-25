@@ -48,6 +48,7 @@ form.index {
   -ms-grid-rows: auto auto auto;
       grid-template-rows: auto auto auto;
   grid-gap: 20px;
+  margin-bottom: 15rem;
 }
 
 form.index input {
@@ -1780,6 +1781,7 @@ div.admin-interface, div.admin-interface div.admin-titre {
 }
 
 div.admin-interface div.admin-titre {
+  height: 30%;
   margin: 0 0 2rem 0;
 }
 
@@ -1796,6 +1798,11 @@ div.admin-interface div.admin-titre h1 {
 div.admin-interface div.admin-titre img {
   position: relative;
   top: -5rem;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 h2 {
@@ -1936,6 +1943,7 @@ ul.admin-index {
   -webkit-column-gap: 50px;
           column-gap: 50px;
   list-style-type: none;
+  margin-bottom: 10rem;
 }
 
 ul.admin-index li > a {
